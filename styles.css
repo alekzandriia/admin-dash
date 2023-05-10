@@ -1,16 +1,85 @@
+:root {
+  --primary-color: #1692d3;
+  --accent-color: #fbcb15;
+  --light-text: #fff;
+  --dark-text: #000;
+  --main-bg: #e2e7f1;
+  --card-bg: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: system-ui;
 }
 
-:root {
-  --primary-color: #1692d3;
-  --accent-color: #fbcb15;
-  --main-bg: #e2e7f1;
-  --card-bg: white;
+body {
+  display: grid;
+  grid-template-columns: 230px auto;
 }
 
 main {
   background: var(--main-bg);
+}
+
+aside {
+  background: var(--primary-color);
+  color: var(--light-text);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header {
+  background: var(--card-bg);
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.project.card {
+  border-left: 0.5rem solid var(--accent-color);
+}
+.project.card p {
+  opacity: 0.7;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding: 1rem;
+}
+
+button {
+  background: var(--primary-color);
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: var(--light-text);
+  font-weight: 600;
+}
+
+button:hover {
+  outline: 2px solid var(--accent-color);
+  cursor: pointer;
+}
+
+aside a {
+  color: var(--light-text);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+aside a:hover {
+  color: var(--accent-color);
 }
