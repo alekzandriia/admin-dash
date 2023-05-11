@@ -284,6 +284,11 @@ nav ul li {
   cursor: pointer;
 }
 
+h3:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
 @media (max-width: 810px) {
   main > div {
     grid-template-columns: 1fr;
