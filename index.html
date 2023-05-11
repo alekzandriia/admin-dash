@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <aside>
@@ -32,14 +33,18 @@
             <input type="search" name="" id="" />
           </form>
           <div class="bell-icon"></div>
-          <div class="user-pic"></div>
-          <div class="user-name">username</div>
+          <div class="user-info">
+            <div class="user-pic"></div>
+            <div class="user-name">username</div>
+          </div>
         </div>
         <div class="bottom-menu">
-          <div class="user-pic"></div>
-          <div class="user">
-            <p>Hi there,</p>
-            <p>user name (@username)</p>
+          <div class="user-info">
+            <div class="user-pic"></div>
+            <div class="greeting">
+              <p>Hi there,</p>
+              <p class="user">user name (@username)</p>
+            </div>
           </div>
           <div class="controls">
             <button>New</button>
@@ -52,7 +57,7 @@
         <div class="projects">
           <h2>Your Projects</h2>
           <ul>
-            <li class="project-card">
+            <li class="project card">
               <h3>Super Cool Project Title</h3>
               <p>Awesome project description goes here.</p>
               <div class="project-icons">
@@ -61,7 +66,7 @@
                 <span class="fork-icon">$</span>
               </div>
             </li>
-            <li class="project-card">
+            <li class="project card">
               <h3>Super Cool Project Title</h3>
               <p>Awesome project description goes here.</p>
               <div class="project-icons">
@@ -70,7 +75,7 @@
                 <span class="fork-icon">$</span>
               </div>
             </li>
-            <li class="project-card">
+            <li class="project card">
               <h3>Super Cool Project Title</h3>
               <p>Awesome project description goes here.</p>
               <div class="project-icons">
@@ -79,7 +84,7 @@
                 <span class="fork-icon">$</span>
               </div>
             </li>
-            <li class="project-card">
+            <li class="project card">
               <h3>Super Cool Project Title</h3>
               <p>Awesome project description goes here.</p>
               <div class="project-icons">
@@ -88,7 +93,7 @@
                 <span class="fork-icon">$</span>
               </div>
             </li>
-            <li class="project-card">
+            <li class="project card">
               <h3>Super Cool Project Title</h3>
               <p>Awesome project description goes here.</p>
               <div class="project-icons">
@@ -97,7 +102,7 @@
                 <span class="fork-icon">$</span>
               </div>
             </li>
-            <li class="project-card">
+            <li class="project card">
               <h3>Super Cool Project Title</h3>
               <p>Awesome project description goes here.</p>
               <div class="project-icons">
@@ -109,47 +114,51 @@
           </ul>
         </div>
         <div class="sidebar">
-          <div class="announcements">
+          <div class="container">
             <h2>Announcements</h2>
-            <ul>
-              <li class="announcement-item">
-                <h3>Site Maintenance</h3>
-                <p>Info about maintenance</p>
-              </li>
-              <li class="announcement-item">
-                <h3>Site Maintenance</h3>
-                <p>Info about maintenance</p>
-              </li>
-              <li class="announcement-item">
-                <h3>Site Maintenance</h3>
-                <p>Info about maintenance</p>
-              </li>
-            </ul>
+            <div class="announcements card">
+              <ul>
+                <li class="announcement-item">
+                  <h3>Site Maintenance</h3>
+                  <p>Info about maintenance</p>
+                </li>
+                <li class="announcement-item">
+                  <h3>Site Maintenance</h3>
+                  <p>Info about maintenance</p>
+                </li>
+                <li class="announcement-item">
+                  <h3>Site Maintenance</h3>
+                  <p>Info about maintenance</p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="trending">
+          <div class="container">
             <h2>Trending</h2>
-            <ul>
-              <li class="trending-item">
-                <img src="" alt="pic" />
-                <p>username</p>
-                <p>project's title</p>
-              </li>
-              <li class="trending-item">
-                <img src="" alt="pic" />
-                <p>username</p>
-                <p>project's title</p>
-              </li>
-              <li class="trending-item">
-                <img src="" alt="pic" />
-                <p>username</p>
-                <p>project's title</p>
-              </li>
-              <li class="trending-item">
-                <img src="" alt="pic" />
-                <p>username</p>
-                <p>project's title</p>
-              </li>
-            </ul>
+            <div class="trending card">
+              <ul>
+                <li class="trending-item">
+                  <img src="" alt="" />
+                  <p>username</p>
+                  <p>project's title</p>
+                </li>
+                <li class="trending-item">
+                  <img src="" alt="" />
+                  <p>username</p>
+                  <p>project's title</p>
+                </li>
+                <li class="trending-item">
+                  <img src="" alt="" />
+                  <p>username</p>
+                  <p>project's title</p>
+                </li>
+                <li class="trending-item">
+                  <img src="" alt="" />
+                  <p>username</p>
+                  <p>project's title</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
